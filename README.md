@@ -5,27 +5,13 @@ The examples in this repository are based off the case study of the Department o
 
 Link to paper: http://www.counciloncybersecurity.org/attachments/article/46/US%20Dept%20of%20State%20Case%20Study.pdf 
 
-ipost-sqlite.py - Python script with iPost Risk Scoring formulas.  The script connects to a SQLite3 database and extracts information need to perform calculations.
+- ipost-sqlite.py - Python script with iPost Risk Scoring formulas.  The script connects to a SQLite3 database and extracts information need to perform calculations.
  
-ipost.db - Simple SQLite database that contains April Microsoft Security Advisories.  Fields include date, CVE-ID, CVSS Score, and Title.
+- ipost.db - Simple SQLite database that contains April Microsoft Security Advisories.  Fields include date, CVE-ID, CVSS Score, and Title.
 
-ipostlib.py – Contains the risk scoring formulas.
+- ipostlib.py – Contains the risk scoring formulas.
 
 
 
-Sample output of ipost-sqlite.py
-Starting iPost Risk Scoring Script
----------------------------------------
-CVSS|DoS|Severity|	CVE-ID			Title
-  9	  8		High	CVE-2014-1758	Microsoft Word Stack Overflow Vulnerability 
-  9	  8		High	CVE-2014-1761	Word RTF Memory Corruption Vulnerability 
-  9	  8		High	CVE-2014-0235	Internet Explorer Memory Corruption Vulnerability  
-  9	  8		High	CVE-2014-1757	MS Office File Format Converter Vulnerability 
-iPost Results
 
-Number Vuls calculated: 4
-Total Host Vul Score:	32
-Anti-Virus Score(AVS):	18.6
-
-End of script
  
