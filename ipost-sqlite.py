@@ -10,8 +10,11 @@
 
 
 # The math module is need for some of the formulas.
+# sqlite3 module needed for database interactions.
+# datetime module need for datetime stamp for host vul results into database.
 import math
 import sqlite3
+import datetime
 
 # Variables
 # Adjust the AV_Age and CVSS scores to see results.
@@ -79,6 +82,11 @@ for row in c.execute('SELECT * FROM vuls ORDER BY date'):
 # Report section
 
 # Print to standard out.
+# get timestamp
+report_time=datetime.datetime.now().isoformat()
+
+# insert into db.
+c.execute("INSERT INTO results VALUES ('%s','endpoint3',%d)" % (report_time, Host_Vul_Score))
 
 print "iPost Results\n"
 print "Number Vuls calculated:", Count_Vuls
