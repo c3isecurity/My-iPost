@@ -37,7 +37,10 @@ def Vul_Score(CVSS):
 # Anti-Virus AVR Formula 
 # Host AVR Score = (IF Signature File Age > 6 THEN 1 Else 0) * 6.0 * Signature File Age
 def Host_AVR_Score(AVR_Age):
-	return 1 * 6.0 * AVR_Age
+	if AVR_Age > 6:
+		return 1 * 6.0 * AVR_Age
+	else:
+		return 6.0 * AVR_Age
 		
 # Patch (PAT) - 
 # Host PAT Score = SUM(PAT scores of all incompletely installed patches)
