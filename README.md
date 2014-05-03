@@ -11,9 +11,14 @@ Link to paper: http://www.counciloncybersecurity.org/attachments/article/46/US%2
 
 - ipostlib.py – Contains the risk scoring formulas.
 
+- ipost.sql - This is a simple sql script to create a database with test information.  ipost-sqlite.py reads and writes to this database.
 
-* EXAMPLE::
+- ipost-test.py - This a sample test script to test the functionality of the ipostlib.  
 
+* EXAMPLE output from ipost-sqlite.py::
+
+        $ python ipost-sqlite.py 
+        
         Starting iPost Risk Scoring Script
         ---------------------------------------
         CVSS|DoS|Severity|	CVE-ID			Title
