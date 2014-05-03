@@ -12,6 +12,21 @@ Link to paper: http://www.counciloncybersecurity.org/attachments/article/46/US%2
 - ipostlib.py – Contains the risk scoring formulas.
 
 
+* EXAMPLE::
 
+        Starting iPost Risk Scoring Script
+        ---------------------------------------
+        CVSS|DoS|Severity|	CVE-ID			Title
+          9	  8		High	CVE-2014-1758	Microsoft Word Stack Overflow Vulnerability 
+          9	  8		High	CVE-2014-1761	Word RTF Memory Corruption Vulnerability 
+          9	  8		High	CVE-2014-0235	Internet Explorer Memory Corruption Vulnerability  
+          9	  8		High	CVE-2014-1757	MS Office File Format Converter Vulnerability 
+        iPost Results
+        
+        Number Vuls calculated: 4
+        Total Host Vul Score:	32
+        Anti-Virus Score(AVS):	18.6
+        
+        End of script
 
  
