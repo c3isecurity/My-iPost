@@ -2,9 +2,7 @@
 """
  This script explores and demonstrates the Risk Scoring algorithms and
  formulas used in the Department of State (DoS) iPost program.
- The examples below are based on the US Department of State Case Study
- found at
- http://www.counciloncybersecurity.org/attachments/article/46/US%20Dept%20of%20State%20Case%20Study.pdf
+ The examples below are based on the US Department of State Case Study.
  This is meant for testing and learning and should not be used for
  production environments. Have fun and use at your own risk
 
@@ -24,7 +22,7 @@ __author__ = "Luis NUnez"
 __copyright__ = "Copyright 2014, C3isecurity"
 
 __license__ = "GPLv3"
-__version__ = "0.1"
+__version__ = "0.2.0"
 __maintainer__ = "Luis Nunez"
 __email__ = "lnunez@c3isecurity.com"
 __status__ = "Prototype"
@@ -40,7 +38,8 @@ def Vul_Score(CVSS):
 
 # Anti-Virus AVR Formula
 # Host
-# AVR Score = (IF Signature File Age > 6 THEN 1 Else 0) * 6.0 * Signature File Age
+# AVR Score = (IF Signature File Age > 6 THEN 1 Else 0) * 6.0
+#    * Signature File Age
 def Host_AVR_Score(AVR_Age):
     if AVR_Age > 6:
         return 1 * 6.0 * AVR_Age
