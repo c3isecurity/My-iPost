@@ -49,9 +49,8 @@ def Host_AVR_Score(AVR_Age):
 
 # Patch (PAT) -
 # Host PAT Score = SUM(PAT scores of all incompletely installed patches)
-def Host_PAT_Score():
-    Host_PAT_Score += Host_PAT_Score
-    print test
+def Host_PAT_Score(): 
+    pass
 
 
 if __name__ == '__main__':
